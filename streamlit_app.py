@@ -13,6 +13,9 @@ st.write(
 
 # Get the current credentials
 session = get_active_session()
+
+st.st.file_uploader('upload')
+'''
 my_catlog=session.table('catalog_for_website').select(col('COLOR_OR_STYLE'))
 
 option=st.selectbox('enter',my_catlog)
@@ -33,3 +36,4 @@ st.image(p_df['DIRECT_URL'].iloc[0],width=400,caption=product_caption)
 st.write('Price:',p_df['PRICE'].iloc[0])
 st.write('Sizes Available::',p_df['SIZE_LIST'].iloc[0])
 st.write(p_df['UPSELL_PRODUCT_DESC'].iloc[0])
+'''
